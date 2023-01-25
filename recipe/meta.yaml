@@ -1,5 +1,5 @@
 {% set name = "sepal-ui" %}
-{% set version = "2.14.1" %}
+{% set version = "2.14.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sepal-ui-{{ version }}.tar.gz
-  sha256: e5e3fbabb2815adcfac6f4cababefef73a68dbdce36762c07b344c6398fdb2a7
+  sha256: 41da25927862d0d4d7eaaeed70f859aa851743f6e62717833d7917f8d9194299
 
 build:
   entry_points:
@@ -33,7 +33,7 @@ requirements:
     - ipyleaflet >=0.14.0
     - earthengine-api
     - colorama
-    - pipreqs 
+    - pipreqs
     - rioxarray
     - dask
     - geopandas

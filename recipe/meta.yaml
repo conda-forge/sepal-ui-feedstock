@@ -1,5 +1,5 @@
 {% set name = "sepal-ui" %}
-{% set version = "2.15.0" %}
+{% set version = "2.15.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sepal-ui-{{ version }}.tar.gz
-  sha256: c2958c3619cc8ada08c5500646e5ced6208d98ca6e68a2934bfc70abaa75eb32
+  sha256: d3b202e8dd3ef57204700073d2f0009ce84bd9c6c1ac037e2b648f73af375cf9
 
 build:
   entry_points:

@@ -1,11 +1,11 @@
-About sepal-ui
-==============
+About sepal-ui-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sepal-ui-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/12rambau/sepal_ui
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sepal-ui-feedstock/blob/main/LICENSE.txt)
 
 Summary: Wrapper for ipyvuetify widgets to unify the display of voila dashboards in SEPAL platform
 

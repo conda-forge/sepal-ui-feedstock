@@ -1,5 +1,5 @@
 {% set name = "sepal-ui" %}
-{% set version = "2.16.1" %}
+{% set version = "2.16.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sepal-ui-{{ version }}.tar.gz
-  sha256: ec2e82143761ebc92bc68d4d7ba2322210f2eff2ae80fbbb441fdf938dae1c3d
+  sha256: 850d8e7311ac606a57eb177569eb6f3e07c41831331a76295928f1ef5430cd7c
 
 build:
   entry_points:
@@ -44,7 +44,7 @@ requirements:
     - python-box
     - tqdm
     - Deprecated
-    - Unidecode
+    - anyascii
     - natsort
     - typing-extensions
 

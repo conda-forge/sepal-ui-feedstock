@@ -44,7 +44,7 @@ requirements:
     - python-box
     - tqdm
     - Deprecated
-    - Unidecode
+    - anyascii
     - natsort
     - typing-extensions
 

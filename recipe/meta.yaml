@@ -47,6 +47,7 @@ requirements:
     - anyascii
     - natsort
     - typing-extensions
+    - tomli
 
 test:
   imports:

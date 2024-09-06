@@ -39,7 +39,7 @@ requirements:
     - geopandas
     - matplotlib-base
     - jupyter-server-proxy
-    - planet >=2
+    - planet
     - pyarrow
     - python-box
     - tqdm

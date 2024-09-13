@@ -27,7 +27,9 @@ requirements:
     - python >=3.6
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
+    - tomli
+    - ipykernel
     - ipyvuetify
     - markdown
     - ipyleaflet >=0.14.0
@@ -35,19 +37,22 @@ requirements:
     - colorama
     - pipreqs
     - rioxarray
-    - dask
+    - dask-core
     - geopandas
     - matplotlib-base
     - jupyter-server-proxy
     - planet
     - pyarrow
+    - localtileserver >=0.7.0
+    - pygaul >=0.3.1
+    - pygadm >=0.5.0
     - python-box
     - tqdm
-    - Deprecated
+    - deprecated >=1.2.14
     - anyascii
     - natsort
     - typing-extensions
-    - tomli
+    - nest-asyncio
 
 test:
   imports:

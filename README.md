@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@12rambau](https://github.com/12rambau/)
+* [@dfguerrerom](https://github.com/dfguerrerom/)
 

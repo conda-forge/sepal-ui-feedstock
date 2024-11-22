@@ -54,7 +54,7 @@ requirements:
     - natsort
     - typing-extensions
     - nest-asyncio
-    - rio-tiler<7
+    - rio-tiler <7
     - reactivex
 
 test:

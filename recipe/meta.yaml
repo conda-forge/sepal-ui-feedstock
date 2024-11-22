@@ -1,5 +1,5 @@
 {% set name = "sepal-ui" %}
-{% set version = "2.20.1" %}
+{% set version = "2.22.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 14f3919d75d47c663c2fcfb3de99482ed0b83be0f0d543d4861335a78b8609d3
+  sha256: 7d6d2714eeae6711bd7666ac8fd6ede6bae3a6b049f8826884d6dccd4bc8d9d8
 
 build:
   entry_points:
@@ -24,10 +24,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.9
     - pip
+    - setuptools
   run:
-    - python >=3.8
+    - python >=3.9
     - tomli
     - ipykernel
     - ipyvuetify
@@ -53,6 +54,8 @@ requirements:
     - natsort
     - typing-extensions
     - nest-asyncio
+    - rio-tiler <7
+    - reactivex
 
 test:
   imports:

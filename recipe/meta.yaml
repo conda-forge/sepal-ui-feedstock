@@ -1,5 +1,5 @@
 {% set name = "sepal-ui" %}
-{% set version = "2.22.1" %}
+{% set version = "3.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 7d6d2714eeae6711bd7666ac8fd6ede6bae3a6b049f8826884d6dccd4bc8d9d8
+  sha256: 9f14166344183b0936bbc1b35fe46a3e73da0c634b4df5e71bb365025a0bb4bf
 
 build:
   entry_points:
@@ -20,7 +20,7 @@ build:
     - sepal_ipyvuetify = sepal_ui.bin.sepal_ipyvuetify:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:

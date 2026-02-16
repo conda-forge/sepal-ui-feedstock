@@ -18,6 +18,7 @@ build:
     - module_venv = sepal_ui.bin.module_venv:main
     - activate_venv = sepal_ui.bin.activate_venv:main
     - sepal_ipyvuetify = sepal_ui.bin.sepal_ipyvuetify:main
+    - entry_point = sepal_ui.bin.entry_point:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
@@ -34,18 +35,18 @@ requirements:
     - ipyvuetify
     - markdown
     - ipyleaflet >=0.14.0
-    - earthengine-api
+    - earthengine-api >1.6.0
     - colorama
     - pipreqs
     - rioxarray
-    - dask-core
-    - geopandas
+    - dask
+    - geopandas >=0.14.0
     - matplotlib-base
     - jupyter-server-proxy
-    - planet
+    - planet >=2.0,<3.0
     - pyarrow
-    - localtileserver >=0.7.0
-    - pygaul >=0.3.1
+    - localtileserver >=0.10.1
+    - pygaul >=0.4.2
     - pygadm >=0.5.0
     - python-box
     - tqdm
@@ -53,15 +54,15 @@ requirements:
     - anyascii
     - natsort
     - typing-extensions
-    - nest-asyncio
-    - rio-tiler <7
+    - solara
+    - ee-client >=2.5.0
+    - colorlog
     - reactivex
 
 test:
   imports:
     - sepal_ui
   commands:
-    - pip check
     - module_deploy --help
     - module_factory --help
     - module_l10n --help
@@ -69,6 +70,7 @@ test:
     - module_venv --help
     - activate_venv --help
     - sepal_ipyvuetify --help
+    - entry_point --help
   requires:
     - pip
     - python {{ python_min }}

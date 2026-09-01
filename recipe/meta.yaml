@@ -1,5 +1,5 @@
 {% set name = "sepal-ui" %}
-{% set version = "3.1.1" %}
+{% set version = "2.22.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 9f14166344183b0936bbc1b35fe46a3e73da0c634b4df5e71bb365025a0bb4bf
+  sha256: 5a4935e5db16230b0109fe24aa3343227dd317da22e657c5dbcfd997a73d8a26
 
 build:
   entry_points:
@@ -32,10 +32,10 @@ requirements:
     - python >={{ python_min }}
     - tomli
     - ipykernel
-    - ipyvuetify
+    - ipyvuetify <3
     - markdown
     - ipyleaflet >=0.14.0
-    - earthengine-api >1.6.0
+    - earthengine-api
     - colorama
     - pipreqs
     - rioxarray
@@ -43,10 +43,10 @@ requirements:
     - geopandas >=0.14.0
     - matplotlib-base
     - jupyter-server-proxy
-    - planet >=2.0,<3.0
+    - planet
     - pyarrow
-    - localtileserver >=0.10.1
-    - pygaul >=0.4.2
+    - localtileserver >=0.7.0
+    - pygaul >=0.3.1
     - pygadm >=0.5.0
     - python-box
     - tqdm
@@ -54,9 +54,8 @@ requirements:
     - anyascii
     - natsort
     - typing-extensions
-    - solara
-    - ee-client >=2.5.0
-    - colorlog
+    - nest-asyncio
+    - rio-tiler <7
     - reactivex
 
 test:
